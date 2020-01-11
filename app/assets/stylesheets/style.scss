@@ -1,0 +1,105 @@
+// Place all the styles related to the timers controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body{
+margin: 0px auto;
+padding: 0px;
+// height: 1334px;
+// width: 750px;
+position: relative;
+background-color: black;
+}
+
+.app_screen{
+  margin:auto;
+}
+
+.bg-slider {
+	width: 100vw;
+	height: 100vh;
+	background-position: center;
+	background-size: cover;
+	align-items: center;
+  justify-content: center;
+  text-align:center
+}
+p{
+  color:white
+}
+// #form{
+//   content: "";
+//   clear: both;
+//   display: block;
+//   float: left;
+// }
+// .wagetext {
+//   float: left;
+//   margin-left: 50px;
+// }
+// #is{
+//   text-align: right;
+// }
+.text {
+  position: absolute;
+  top: 50%;  
+  left: 50%;
+  margin-top: 50%;
+}
+h1{
+  color: white;
+}
+h3{
+  color: white;
+}
+// .bg-slider__title{
+// 	color: #fff;
+// 	font-size: 48px;
+// 	line-height: 1.5;
+// 	font-weight: bold;
+// 	text-align:center;
+// 	text-shadow: 1px 1px 1px #000;
+// }
+@media screen and (min-width:480px){
+  body{
+    margin: 0px auto;
+  padding: 0px;
+  // height: 1334px;
+  // width: 750px;
+  position: relative;
+  }
+}
+@media screen and (min-width:768px){
+  body{
+    margin: 0px auto;
+  padding: 0px;
+  // height: 768px;
+  // width: 1024px;
+  position: relative;
+  }
+}
+
+@media screen and (min-width:768px){
+  .bg-slider{
+    width: 100vw;
+	height: 100vh;
+	background-position:center center;
+	background-size: cover;
+	align-items: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  }
+}
+
+@media screen and (min-width:480px){
+  .bg-slider{
+    width: 100vw;
+	height: 100vh;
+	background-position:center center;
+	background-size: cover;
+	align-items: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  }
+}

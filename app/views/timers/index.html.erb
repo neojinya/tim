@@ -1,0 +1,150 @@
+<%= link_to "あ", timers_new_path %>
+<%= link_to "い", timers_show_path %>
+<div class = "app_screen">
+<div class="bg-slider">
+<form name="form" id="form"><p>時間給を入力してください</p>
+<select name="income_category" id="income">
+<option value="月給">月給</option>
+<option value="日給">日給</option>
+<option value="時給">時給</option>
+<input id="price" type="number" name = "num" puttern="[1-9][0-9]*">
+</select>
+
+<div id="div1">
+  <input type="button" id="start" value="作業開始" >
+</div>
+<div id = "div2">
+<input type="button" onclick="location.reload()" value="リセット" />
+</div>
+</form>
+<div class = "wagetext">
+<h3></h3>
+  <h1 id="timeis"></h1>
+  <h3 id="is"></h3>
+</div>
+</div>
+<%# <script src="https://ajax.googleapis.com/ajax/libs/jquery/4.3.5/jquery.min.js"></script> %>
+</div>
+
+
+
+  <script>
+
+
+  // const $form = document.getElementById("form");
+  // $form.addEventListener('input',(e)=> {
+  //   let type = e.target.type;
+  //   let validationMessage = e.target.validationMessage;
+  //   // conssole.log('onInput', type);
+  //   // console.log(e);
+  //   // console.log(type,validationMessage);
+
+  // });
+
+  let imagechange = document.getElementById("image_change");
+  let count = 0;
+  let div1 = document.getElementById("div1");
+  let button = document.getElementById("start");
+  activebg = 0
+  var onclickstart = function(){
+    // start_button = document.getElementById("start");
+    // console.log(start_button);
+    document.querySelector("h3").innerHTML = "";
+    document.getElementById("is").innerHTML = "";
+    let number = document.getElementById("price");
+    var element = document.getElementById("income");
+    var element2 = element.value;
+    
+    switch (element2){
+      case "月給":
+        console.log(number.value);
+        wage = number.value/23/8/60/60;
+      break;
+      case "日給":
+        console.log(number.value);
+        wage = number.value/8/60/60;
+      break;
+      case "時給":
+        console.log(number.value);
+        wage = number.value/60/60;
+      break;
+    }
+    start.parentNode.removeChild(start);  
+    stop_btn = document.createElement("input");
+    stop_btn.setAttribute("type","button");
+    stop_btn.setAttribute("id","stop");
+    stop_btn.setAttribute("value","作業終了");
+    stop_btn.setAttribute("onclick","onclickstop()")
+    div1.appendChild(stop_btn);
+
+
+    stop_btn.onclick=function(){ //ここでfunction onclickstop()とすると、onclickstop is not definedが出る。
+      console.log("createしたonclickでストップ");
+      clearInterval(counttime);
+      stop_btn.parentNode.removeChild(stop_btn);
+      start_btn = document.createElement("input");
+      start_btn.setAttribute("type","button");
+      start_btn.setAttribute("id","start");
+      start_btn.setAttribute("value","作業再開");
+      start_btn.setAttribute("onclick","onclickstart()")
+      div1.appendChild(start_btn);
+    }
+    jQuery(function($) {
+          
+    $('.bg-slider').bgSwitcher({
+        images: ['75716959_480x466.jpg','IMG_7339.png','IMG_1765.png','publicdomainq-0032867psc.jpg','IMG_7808.jpg'], // 切り替える背景画像を指定
+        loop: false,
+        start: false,
+        duration: 3000
+});
+
+});
+  time();
+  
+  function time(){
+  count = count + wage;
+  document.getElementById("timeis").innerHTML = "¥"+count;
+
+
+  
+
+
+  
+        
+    if (1 <= count && count < 3){
+      console.log('if文 count > 1 発動');
+      if (activebg===0){
+      $(".bg-slider").bgswitcher("next");
+      activebg = 1
+      }
+    }
+    else if(3 <= count && count < 5){
+      console.log('if文 3 <= count && count < 5 発動');
+      if (activebg===1){
+      $(".bg-slider").bgswitcher("next");
+      activebg = 2
+      }
+    }
+    else if(5 <= count && count < 7){
+    console.log("if文5 <= count && count < 7 発動");
+      if (activebg===2){
+      $(".bg-slider").bgswitcher("next");
+      activebg = 3
+      }
+    }
+  
+}
+counttime = setInterval(time,1000);
+
+  
+  stop_btn.addEventListener("click",function(){
+    document.querySelector("h3").innerHTML = "これまでの時間給は";
+    document.getElementById("is").innerHTML = "です";
+  });  
+
+  stop_btn.addEventListener("click",function(){
+    $('.bg-slider').bgSwitcher("stop");
+  });  
+}
+button.onclick = onclickstart;
+</script>
