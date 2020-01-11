@@ -25,12 +25,12 @@ Things you may want to cover:
 
 
 
+![PAK95_sunadokei20141018123010_TP_V](https://user-images.githubusercontent.com/56024807/72201489-e67ed800-3497-11ea-9280-c31b9baaf09d.jpg)
+
 # time_is_money_1
 このアプリは名前の通り、時間を金額に換算して可視化するアプリです。
 例えば自分の時間給を入力して、（無職の方は前職の時間給でもよし。）スタートボタンを押すと、1秒ごとに時間給が蓄積さていき、ストップしてボタンを押すまでカウントし続けます。背景画像がフェードで変更されるのですがその時の時間給で買えるものを表示しています。（画像に関しては今後ユーザーが自分で値段とimageを設定できるような実装をします）
 
-
-![PAK95_sunadokei20141018123010_TP_V](https://user-images.githubusercontent.com/56024807/72201489-e67ed800-3497-11ea-9280-c31b9baaf09d.jpg)
 
 # Dependency
 使用言語
