@@ -6,7 +6,21 @@ padding: 0px;
 position: relative;
 background-color: black;
 }
-
+@media screen and (max-width:480px)
+{input[type="number"]{
+  width:300px;
+  height:40px;
+}}
+@media screen and (max-width:480px)
+{input[type="button"]{
+  width:300px;
+  height:40px;
+}}
+@media screen and (max-width:480px)
+{#income{
+  width:300px;
+  height:40px;
+}}
 .app_screen{
   margin:auto;
 }
