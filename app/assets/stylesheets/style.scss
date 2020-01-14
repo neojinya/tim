@@ -70,6 +70,9 @@ h3{
 
 @media screen and (min-width:768px){
   .bg-slider{
+    display: flex;
+  justify-content: center;
+  align-items: center;
     width: 100vw;
 	height: 100vh;
 	background-position:center center;
@@ -83,6 +86,9 @@ h3{
 
 @media screen and (min-width:480px){
   .bg-slider{
+    display: flex;
+  justify-content: center;
+  align-items: center;
     width: 100vw;
 	height: 100vh;
 	background-position:center center;
