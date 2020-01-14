@@ -6,21 +6,7 @@ padding: 0px;
 position: relative;
 background-color: black;
 }
-@media screen and (max-width:480px)
-{input[type="number"]{
-  width:300px;
-  height:40px;
-}}
-@media screen and (max-width:480px)
-{input[type="button"]{
-  width:300px;
-  height:40px;
-}}
-@media screen and (max-width:480px)
-{#income{
-  width:300px;
-  height:40px;
-}}
+
 .app_screen{
   margin:auto;
 }
@@ -49,7 +35,7 @@ h1{
 h3{
   color: white;
 }
-@media screen and (min-width:480px){
+@media screen and (max-width:480px){
   body{
     margin: 0px auto;
   padding: 0px;
@@ -58,7 +44,7 @@ h3{
   position: relative;
   }
 }
-@media screen and (min-width:768px){
+@media screen and (max-width:768px){
   body{
     margin: 0px auto;
   padding: 0px;
@@ -68,7 +54,7 @@ h3{
   }
 }
 
-@media screen and (min-width:768px){
+@media screen and (max-width:768px){
   .bg-slider{
     display: flex;
   justify-content: center;
@@ -84,7 +70,7 @@ h3{
   }
 }
 
-@media screen and (min-width:480px){
+@media screen and (max-width:480px){
   .bg-slider{
     display: flex;
   justify-content: center;
@@ -99,3 +85,19 @@ h3{
   left: 50%;
   }
 }
+
+@media screen and (max-width:480px)
+{input[type="number"]{
+  width:200px;
+  height:30px;
+}}
+@media screen and (max-width:480px)
+{input[type="button"]{
+  width:200px;
+  height:30px;
+}}
+@media screen and (max-width:480px)
+{#income{
+  width:200px;
+  height:30px;
+}}
