@@ -7,12 +7,13 @@
       <option value="時給">時給</option>
       <input id="price" type="number" name = "num" puttern="[1-9][0-9]*">
     </select>
-
-    <div id="div1">
-      <input type="button" id="start" value="作業開始" >
-    </div>
-    <div id = "div2">
-      <input type="button" onclick="location.reload()" value="リセット" />
+    <div id = "buttonblock">
+      <div id="div1">
+        <input type="button" id="start" value="作業開始" >
+      </div>
+      <div id = "div2">
+        <input type="button" onclick="location.reload()" value="リセット" />
+      </div>
     </div>
   </form>
 <div class = "wagetext">
@@ -92,7 +93,8 @@
   function time(){
   // 1秒分に分割された時間給をcountに代入し、ノードtimeisに¥単位で表示
   count = count + wage;
-  document.getElementById("timeis").innerHTML = "¥"+count;
+  
+  document.getElementById("timeis").innerHTML = "¥"+Math.floor(count);
         
     // countが指定された範囲ごとで背景イメージを切り替えるif分
     if (1 <= count && count < 3){
