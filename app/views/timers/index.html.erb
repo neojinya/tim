@@ -12,7 +12,7 @@
         <input type="button" id="start" value="作業開始" >
       </div>
       <div id = "div2">
-        <input type="button" onclick="location.reload()" value="リセット" />
+        <input type="button" id="reset" value="リセット" />
       </div>
     </div>
   </form>
@@ -23,6 +23,7 @@
   <h3 id="is"></h3>
 </div>
   <script>
+  let resetbutton = document.getElementById("reset"); 
   // 時間給の初期値を定義
   let count = 0;
   // スタート、ストップボタンを切り替えるためにボタンの親ノードを取得
@@ -128,4 +129,7 @@ counttime = setInterval(time,1000);
 }
 // 関数onclickstartはbottonのonclickで動くことを設定。
 button.onclick = onclickstart;
+resetbutton.addEventListener("click",function(){
+  window.location.reload(false);
+});
 </script>
