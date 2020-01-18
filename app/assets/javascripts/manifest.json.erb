@@ -7,7 +7,7 @@
   <% icon_sizes.map { |s| "#{s}x#{s}" }.each.with_index do |dim, i| %>
     {
       "src": "<%= image_path "timeismoney2.png" %>",
-      "sizes": "<%= 512x512 %>",
+      "sizes": "512x512",
       "type": "image/png"
     }<%= i == (icon_sizes.length - 1) ? '' : ',' %>
   <% end %>
