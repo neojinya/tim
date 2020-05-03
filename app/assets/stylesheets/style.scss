@@ -35,6 +35,32 @@ h1{
 h3{
   color: white;
 }
+
+li{
+  color: #ffffff;
+  list-style: none;
+  font-size: 0.6rem;
+}
+span{
+  color: yellow;
+  font-size: 1.0rem;
+  margin-left: 20px;
+}
+
+
+.select_image_container {
+  text-align: center;
+}
+  // #file-sample1 > input {
+  // display:none; /* アップロードボタンのスタイルを無効にする */
+  // }
+  // #file-sample1 {
+  // color: #AAAAAA; /* ラベルテキストの色を指定する */
+  // background-color: #006DD9;/* ラベルの背景色を指定する */
+  // padding: 10px; /* ラベルとテキスト間の余白を指定する */
+  // border: double 4px #AAAAAA;/* ラベルのボーダーを指定する */
+  // }
+
 @media screen and (max-width:480px){
   body{
     margin: 0px auto;
