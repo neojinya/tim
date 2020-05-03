@@ -12,18 +12,21 @@ window.onload = function(){
   element = document.getElementById("income");
   activebg = 0
   
-    // 選択した画像ファイルを表示するHTMLを定義
-    let html = `
-      <div class = "select_image_container" id = "select_image_container">
-        <input id="file-sample1" type="file" multiple/>
-        <img id="file-preview1">
-      </div>`
-    let sic = document.getElementById('select_image_containers');
-    // imageファイルを追加するための空の配列を作成
-    let file_array = [];
-    // 画像を変化させるタイミングを入れる空の配列を作成
-    let t_array = [];
+  // 選択した画像ファイルを表示するHTMLを定義
+  let html = `
+    <div class = "select_image_container" id = "select_image_container">
+      <input id="file-sample1" type="file" multiple/>
+      <img id="file-preview1">
+    </div>`
+  let sic = document.getElementById('select_image_containers');
+  // imageファイルを追加するための空の配列を作成
+  let file_array = [];
+  // 画像を変化させるタイミングを入れる空の配列を作成
+  let t_array = [];
 
+  ul = document.querySelector('ul');
+
+  fileForm = document.getElementById("file-sample1");
 
 
   // imageを取得するコード
@@ -31,7 +34,6 @@ window.onload = function(){
     var file = e.target.files[0];
     var blobUrl = window.URL.createObjectURL(file);
     var img = document.getElementById('file-preview1');
-    fileForm = document.getElementById("file-sample1");
     
     // image切り替え用のBlobUrlの配列を作成
     file_array.push(blobUrl);
@@ -54,7 +56,6 @@ window.onload = function(){
   } else if (file_array.length !== 1){
     newelm.innerHTML = '<hr>'+'<br>'+file_array.length+"枚目の背景: "+file.name;
   }
-    ul = document.querySelector('ul')
     ul.appendChild(newelm);
 
     button.style.opacity= "0.8";

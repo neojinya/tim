@@ -16,7 +16,8 @@ background-color: black;
 	height: 100vh;
 	background-position: center;
 	background-size: cover;
-	align-items: center;
+  align-items: center;
+  display: flex;
   justify-content: center;
   text-align:center
 }
@@ -51,15 +52,6 @@ span{
 .select_image_container {
   text-align: center;
 }
-  // #file-sample1 > input {
-  // display:none; /* アップロードボタンのスタイルを無効にする */
-  // }
-  // #file-sample1 {
-  // color: #AAAAAA; /* ラベルテキストの色を指定する */
-  // background-color: #006DD9;/* ラベルの背景色を指定する */
-  // padding: 10px; /* ラベルとテキスト間の余白を指定する */
-  // border: double 4px #AAAAAA;/* ラベルのボーダーを指定する */
-  // }
 
 @media screen and (max-width:480px){
   body{
