@@ -1,0 +1,78 @@
+{
+  "name": "timeismoney",
+  "short_name": "tim",
+  "start_url": "/",
+  "icons": [
+  
+    {
+      "src": "https://time-is-money-app.herokuapp.com/timeismoney2.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+  
+    {
+      "src": "https://time-is-money-app.herokuapp.com/timeismoney2.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+  
+    {
+      "src": "https://time-is-money-app.herokuapp.com/timeismoney2.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+  
+    {
+      "src": "https://time-is-money-app.herokuapp.com/timeismoney2.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+  
+    {
+      "src": "https://time-is-money-app.herokuapp.com/timeismoney2.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+  
+    {
+      "src": "https://time-is-money-app.herokuapp.com/timeismoney2.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+  
+    {
+      "src": "https://time-is-money-app.herokuapp.com/timeismoney2.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+  
+    {
+      "src": "https://time-is-money-app.herokuapp.com/timeismoney2.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+  
+    {
+      "src": "https://time-is-money-app.herokuapp.com/timeismoney2.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+  
+    {
+      "src": "https://time-is-money-app.herokuapp.com/timeismoney2.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+  
+    {
+      "src": "https://time-is-money-app.herokuapp.com/timeismoney2.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  
+  ],
+  "theme_color": "#000000",
+  "background_color": "#FFFFFF",
+  "display": "fullscreen",
+  "orientation": "portrait"
+}

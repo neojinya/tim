@@ -1,7 +1,7 @@
 window.onload = function(){
+  let resetbutton = document.getElementById("reset");
   // 時間給の初期値を定義
-  let count = 0;
-  let resetbutton = document.getElementById("reset"); 
+  let count = 0; 
   // スタート、ストップボタンを切り替えるためにボタンの親ノードを取得
   let div1 = document.getElementById("div1");
   // スタートボタンのDOM要素をidで取得
