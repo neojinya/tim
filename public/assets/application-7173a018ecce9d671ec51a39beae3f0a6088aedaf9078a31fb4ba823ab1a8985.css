@@ -1,0 +1,167 @@
+/* line 1, /Users/yamamotojinya/app_development/time_is_money_1/app/assets/stylesheets/style.scss */
+body {
+  margin: 0px auto;
+  padding: 0px;
+  position: relative;
+  background-color: black;
+}
+
+/* line 10, /Users/yamamotojinya/app_development/time_is_money_1/app/assets/stylesheets/style.scss */
+.app_screen {
+  margin: auto;
+}
+
+/* line 14, /Users/yamamotojinya/app_development/time_is_money_1/app/assets/stylesheets/style.scss */
+.bg-slider {
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/* line 24, /Users/yamamotojinya/app_development/time_is_money_1/app/assets/stylesheets/style.scss */
+p {
+  color: white;
+}
+
+/* line 27, /Users/yamamotojinya/app_development/time_is_money_1/app/assets/stylesheets/style.scss */
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 50%;
+}
+
+/* line 33, /Users/yamamotojinya/app_development/time_is_money_1/app/assets/stylesheets/style.scss */
+h1 {
+  color: white;
+}
+
+/* line 36, /Users/yamamotojinya/app_development/time_is_money_1/app/assets/stylesheets/style.scss */
+h3 {
+  color: white;
+}
+
+/* line 40, /Users/yamamotojinya/app_development/time_is_money_1/app/assets/stylesheets/style.scss */
+li {
+  color: #ffffff;
+  list-style: none;
+  font-size: 0.6rem;
+}
+
+/* line 45, /Users/yamamotojinya/app_development/time_is_money_1/app/assets/stylesheets/style.scss */
+span {
+  color: yellow;
+  font-size: 1.0rem;
+  margin-left: 20px;
+}
+
+/* line 52, /Users/yamamotojinya/app_development/time_is_money_1/app/assets/stylesheets/style.scss */
+.select_image_container {
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  /* line 57, /Users/yamamotojinya/app_development/time_is_money_1/app/assets/stylesheets/style.scss */
+  body {
+    margin: 0px auto;
+    padding: 0px;
+    position: relative;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 66, /Users/yamamotojinya/app_development/time_is_money_1/app/assets/stylesheets/style.scss */
+  body {
+    margin: 0px auto;
+    padding: 0px;
+    position: relative;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 76, /Users/yamamotojinya/app_development/time_is_money_1/app/assets/stylesheets/style.scss */
+  .bg-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 92, /Users/yamamotojinya/app_development/time_is_money_1/app/assets/stylesheets/style.scss */
+  .bg-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 108, /Users/yamamotojinya/app_development/time_is_money_1/app/assets/stylesheets/style.scss */
+  input[type="number"] {
+    width: 200px;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 113, /Users/yamamotojinya/app_development/time_is_money_1/app/assets/stylesheets/style.scss */
+  input[type="button"] {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 121, /Users/yamamotojinya/app_development/time_is_money_1/app/assets/stylesheets/style.scss */
+  #income {
+    width: 200px;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 126, /Users/yamamotojinya/app_development/time_is_money_1/app/assets/stylesheets/style.scss */
+  #div1 {
+    float: right;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 130, /Users/yamamotojinya/app_development/time_is_money_1/app/assets/stylesheets/style.scss */
+  #div2 {
+    float: left;
+  }
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
