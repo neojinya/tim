@@ -23,9 +23,9 @@ window.onload = function(){
   let file_array = [];
   // 画像を変化させるタイミングを入れる空の配列を作成
   let t_array = [];
-
+  // ulのノード取得
   ul = document.querySelector('ul');
-
+  // input fileのノード取得
   fileForm = document.getElementById("file-sample1");
 
 
@@ -52,12 +52,13 @@ window.onload = function(){
     newelm.classList.add('select_image_container');
     newelm.setAttribute('id', 'select_image');
     if (file_array.length === 1) {
-    newelm.innerHTML = "最初の背景: "+file.name;
+      newelm.innerHTML = "最初の背景: "+file.name;
   } else if (file_array.length !== 1){
-    newelm.innerHTML = '<hr>'+'<br>'+file_array.length+"枚目の背景: "+file.name;
+      newelm.innerHTML = '<hr>'+'<br>'+file_array.length+"枚目の背景: "+file.name;
   }
     ul.appendChild(newelm);
 
+    // 背景を設定した際に、ボタンなどを半透明化
     button.style.opacity= "0.8";
     resetbutton.style.opacity= "0.8";
     fileForm.style.opacity= "0.8";
@@ -95,7 +96,6 @@ window.onload = function(){
         });
         t_array.push(swich_num1);
         tnum_array = t_array.map(Number);
-        console.log(tnum_array);
     }
   }
 });
@@ -159,27 +159,27 @@ window.onload = function(){
         duration: 3000
   });
 });
-
+  // 繰り返し用のカウント,n
   n = 0
   // ここで一度変数timeを定義し、関数timeのなかで計算と背景画像の遷移させる
   time();
   function time(){
   // 1秒分に分割された時間給をcountに代入し、ノードtimeisに¥単位で表示
-  count = count + wage;
-  document.getElementById("timeis").innerHTML = "¥"+Math.floor(count);
+    count = count + wage;
+    document.getElementById("timeis").innerHTML = "¥"+Math.floor(count);
   // もし画像が設定されていなければ背景の遷移なしで動作する
   
   // 画像の切り替わる値段の配列のtnum_arrayが定義されていない場合は画像の切り替えは行わない条件分岐
-  if (typeof tnum_array !== 'undefined') {
-    // 指定した切り替わるタイミングで背景画像を切り替える
-    if (tnum_array[n] < count) {
-      $(".bg-slider").bgswitcher("next");
-      n = n+1
+    if (typeof tnum_array !== 'undefined') {
+      // 指定した切り替わるタイミングで背景画像を切り替える
+      if (tnum_array[n] < count) {
+        $(".bg-slider").bgswitcher("next");
+        n = n+1
+      }
     }
   }
-}
 // 関数timeを1秒ごとに繰り返す
-counttime = setInterval(time,1000);
+  counttime = setInterval(time,1000);
 
   // ストップボタンを押したら、h3要素にそれぞれ文字列が追加される。
   stop_btn.addEventListener("click",function(){
@@ -188,9 +188,9 @@ counttime = setInterval(time,1000);
   });  
 }
 
-// 関数onclickstartはbottonのonclickで動くことを設定。
-button.onclick = onclickstart;
-resetbutton.addEventListener("click",function(){
-  window.location.reload(false);
-});
+  // 関数onclickstartはbottonのonclickで動くことを設定。
+  button.onclick = onclickstart;
+  resetbutton.addEventListener("click",function(){
+    window.location.reload(false);
+  });
 }
