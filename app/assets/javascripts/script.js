@@ -24,7 +24,7 @@ window.onload = function(){
   // 画像を変化させるタイミングを入れる空の配列を作成
   let t_array = [];
   // ulのノード取得
-  ul = document.querySelector('ul');
+  ulnode = document.querySelector('ul');
   // input fileのノード取得
   fileForm = document.getElementById("file-sample1");
 
@@ -56,7 +56,7 @@ window.onload = function(){
   } else if (file_array.length !== 1){
       newelm.innerHTML = '<hr>'+'<br>'+file_array.length+"枚目の背景: "+file.name;
   }
-    ul.appendChild(newelm);
+    ulnode.appendChild(newelm);
 
     // 背景を設定した際に、ボタンなどを半透明化
     button.style.opacity= "0.8";
@@ -102,16 +102,20 @@ window.onload = function(){
 
   // ここからボタンを押したら始まる関数
   window.onclickstart = function(){
-    ul.parentNode.removeChild(ul);
-    fileForm.parentNode.removeChild(fileForm);
+    // 繰返し二周目のulが削除されているかを確認
+    ulnode = document.querySelector('ul');
+    if (ulnode !== null) {
+      ulnode.parentNode.removeChild(ulnode);
+    }
+    // 繰返し二周目のinput fileが削除されているかを確認
+    fileForm = document.getElementById("file-sample1");
+    if (fileForm !== null){
+      fileForm.parentNode.removeChild(fileForm);
+    }
     // カウントをストップした時に表示するノードを取得
     document.querySelector("h3").innerHTML = "";
     // カウントをストップした時に表示するノードを取得
     document.getElementById("is").innerHTML = "";
-    // 入力してもらった時間給を取得しnumberに代入
-    // let number = document.getElementById("price")
-    // // まずセレクトボックスのノードを取得
-    // var element = document.getElementById("income");
     // セレクトボックスの値を取り出し代入
     var element2 = element.value;
     // セレクトボックスの値によって計算式をわけ、numberを1秒分に分割しwageに代入
@@ -126,7 +130,6 @@ window.onload = function(){
         wage = number.value/60/60;
       break;
     }
-
     // 作業開始ボタンを削除して、その場所に新しく作業終了ボタンを作る
     start.parentNode.removeChild(start);  
     stop_btn = document.createElement("input");

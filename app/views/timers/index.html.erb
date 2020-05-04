@@ -1,41 +1,32 @@
 <div class="bg-slider">
   <div class="box">
-  <form name="form" id="form"><p></p>
-    <select name="income_category" id="income">
-      <option value="月給">月給</option>
-      <option value="日給">日給</option>
-      <option value="時給">時給</option>
-      <input id="price" type="number" name = "num" puttern="[1-9][0-9]*" min = "0" placeholder = "時間給を入力してください">
-    </select>
-    <%# 画像ファイルを複数選択(ユーザーによる要素の値が変子が確定した時に発生してその要素をthisで返す) %>
-    <%# <div class = "select_image_containers" id = "select_image_containers">
-      <div class = "select_image_container" id = "select_image_container">
-        <input id="file-sample1" type="file"  multiple/>
-        <img id="file-preview1">
-      </div>
-    </div> %>
+    <form name="form" id="form"><p></p>
+      <select name="income_category" id="income">
+        <option value="月給">月給</option>
+        <option value="日給">日給</option>
+        <option value="時給">時給</option>
+        <input id="price" type="number" name = "num" puttern="[1-9][0-9]*" min = "0" placeholder = "時間給を入力してください">
+      </select>
+      
       <div class = "select_image_container" id = "select_image_container">
         <input id="file-sample1" type="file"  multiple/>
         <img id="file-preview1">
         <ul>
         </ul>
       </div>
-    
-    <div id = "buttonblock">
-      <div id="div1">
-        <input type="button" id="start" value="作業開始" >
+      
+      <div id = "buttonblock">
+        <div id="div1">
+          <input type="button" id="start" value="作業開始" >
+        </div>
+        <div id = "div2">
+          <input type="button" id="reset" value="リセット" />
+        </div>
       </div>
-      <div id = "div2">
-        <input type="button" id="reset" value="リセット" />
-      </div>
-    </div>
-  </form>
-<div class = "wagetext">
-<%# 見出しは<h3>に文字列と、<h1>に計算結果が入ります。 %>
-  <h3></h3>
-  <h1 id="timeis"></h1>
-  <h3 id="is"></h3>
-</div>
-  <script>
-
-</script>
+    </form>
+  <div class = "wagetext">
+  <%# 見出しは<h3>に文字列と、<h1>に計算結果が入ります。 %>
+    <h3></h3>
+    <h1 id="timeis"></h1>
+    <h3 id="is"></h3>
+  </div>
